@@ -1,99 +1,87 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f0f0f0;
-  color: #030303;
   margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(37, 175, 213);
 }
 
 .container {
   display: flex;
-  max-width: 1100px;
-  margin: 30px auto;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background: white;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-}
-
-.izquierdo, .derecho {
-  padding: 20px;
 }
 
 .izquierdo {
-  background: #1d507a;
-  width: 35%;
+  background-color: #0e6ba8;
+  color: white;
+  flex: 1;
+  padding: 20px;
+  min-width: 300px;
   text-align: center;
 }
 
 .izquierdo img {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 15px;
 }
 
-.izquierdo h1 {
-  font-size: 20px;
-  margin-bottom: 5px;
-}
-
-.izquierdo p.title {
-  font-size: 14px;
+.title {
   font-weight: bold;
-  color: rgb(0, 0, 0);
-  margin-bottom: 20px;
-}
-
-.derecho {
-  width: 65%;
-}
-
-.titulo {
-  font-weight: bold;
-  color: #114;
-  border-bottom: 1px solid #ccc;
-  margin: 20px 0 5px;
-  font-size: 16px;
-}
-
-.contenido {
-  font-size: 14px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease;
-}
-
-.contenido.visible {
-  max-height: 500px; /* Altura máxima visible (ajustable) */
-  margin-bottom: 10px;
-}
-
-.contenido ul {
-  padding-left: 20px;
-}
-
-.contenido li {
-  margin-bottom: 6px;
+  margin: 10px 0;
 }
 
 .info p {
-  font-size: 13px;
-  margin-bottom: 5px;
+  margin: 5px 0;
 }
 
-button.boton {
-  margin: 5px 0 10px;
-  padding: 6px 10px;
-  font-size: 13px;
-  border: none;
-  border-radius: 4px;
-  background-color: #114;
+.derecho {
+  flex: 2;
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+.titulo {
+  margin-top: 20px;
+  color: #0e6ba8;
+}
+
+.boton {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #0e6ba8;
   color: white;
+  border: none;
   cursor: pointer;
 }
 
-button.boton:hover {
-  background-color: #335;
+.contenido {
+  display: none;
+  padding: 10px 0;
+}
+
+form {
+  margin-top: 30px;
+  background-color: white;
+  color: #333;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
