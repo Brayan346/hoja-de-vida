@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f0f0f0;
+  color: #030303;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  max-width: 1100px;
+  margin: 30px auto;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.izquierdo, .derecho {
+  padding: 20px;
+}
+
+.izquierdo {
+  background: #1d507a;
+  width: 35%;
+  text-align: center;
+}
+
+.izquierdo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.izquierdo h1 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.izquierdo p.title {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+
+.derecho {
+  width: 65%;
+}
+
+.titulo {
+  font-weight: bold;
+  color: #114;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0 5px;
+  font-size: 16px;
+}
+
+.contenido {
+  font-size: 14px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.contenido.visible {
+  max-height: 500px; /* Altura máxima visible (ajustable) */
+  margin-bottom: 10px;
+}
+
+.contenido ul {
+  padding-left: 20px;
+}
+
+.contenido li {
+  margin-bottom: 6px;
+}
+
+.info p {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+button.boton {
+  margin: 5px 0 10px;
+  padding: 6px 10px;
+  font-size: 13px;
+  border: none;
+  border-radius: 4px;
+  background-color: #114;
+  color: white;
+  cursor: pointer;
+}
+
+button.boton:hover {
+  background-color: #335;
+}
